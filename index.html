@@ -1,23 +1,60 @@
 <!doctype html>
 <html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <meta name="theme-color" content="#10131d">
-  <title>Orbit Breaker</title>
-  <link rel="stylesheet" href="style.css">
-  <script src="game.js" defer></script>
-</head>
-<body>
-  <main>
-    <header><a class="brand" href="./">OB<span>Orbit Breaker</span></a><button id="sound" aria-pressed="false">Sound off</button></header>
-    <section class="intro"><p class="eyebrow">A tiny arcade escape</p><h1>Keep your<br><em>orbit alive.</em></h1><p>Guide your ship around the ring. Collect stardust.<br>Dodge the fragments drifting into your path.</p></section>
-    <section class="arcade" aria-label="Orbit Breaker game">
-      <div class="stats"><div>STARDUST <strong id="score">0</strong></div><div>BEST <strong id="best">0</strong></div><button id="pause" disabled>Pause</button></div>
-      <div class="stage"><canvas id="game" width="720" height="720" aria-label="Circular arcade game. Use left and right arrows or A and D to move." tabindex="0"></canvas><div id="overlay"><p id="badge">READY FOR LAUNCH</p><h2 id="message">Find your rhythm.</h2><p id="hint">Move around the ring to collect the glowing stars.</p><button id="start">Launch game <span>↗</span></button></div></div>
-      <div class="controls"><button id="left" aria-label="Move counterclockwise">←</button><p><kbd>←</kbd> <kbd>→</kbd> or <kbd>A</kbd> <kbd>D</kbd> to move <span>·</span> <kbd>Space</kbd> to pause</p><button id="right" aria-label="Move clockwise">→</button></div>
-    </section>
-    <footer>Built for a little break. <span>No downloads. No account. Just one more orbit.</span></footer>
-  </main>
-</body>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="theme-color" content="#10131d" />
+    <title>Orbit Breaker</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="game.js" defer></script>
+  </head>
+  <body>
+    <main>
+      <header
+        ><a class="brand" href="./">OB<span>Orbit Breaker</span></a
+        ><button id="sound" aria-pressed="false">Sound off</button></header
+      >
+      <section class="intro"
+        ><p class="eyebrow">A tiny arcade escape</p
+        ><h1>Keep your<br /><em>orbit alive.</em></h1
+        ><p
+          >Guide your ship around the ring. Collect stardust.<br />Dodge the
+          fragments drifting into your path.</p
+        ></section
+      >
+      <section class="arcade" aria-label="Orbit Breaker game">
+        <div class="stats"
+          ><div>STARDUST <strong id="score">0</strong></div
+          ><div>BEST <strong id="best">0</strong></div
+          ><button id="pause" disabled>Pause</button></div
+        >
+        <div class="stage"
+          ><canvas
+            id="game"
+            width="720"
+            height="720"
+            aria-label="Circular arcade game. Use left and right arrows or A and D to move."
+            tabindex="0"
+          ></canvas
+          ><div id="overlay"
+            ><p id="badge">READY FOR LAUNCH</p
+            ><h2 id="message">Find your rhythm.</h2
+            ><p id="hint">Move around the ring to collect the glowing stars.</p
+            ><button id="start">Launch game <span>↗</span></button></div
+          ></div
+        >
+        <div class="controls"
+          ><button id="left" aria-label="Move counterclockwise">←</button
+          ><p
+            ><kbd>←</kbd> <kbd>→</kbd> or <kbd>A</kbd> <kbd>D</kbd> to move
+            <span>·</span> <kbd>Space</kbd> to pause</p
+          ><button id="right" aria-label="Move clockwise">→</button></div
+        >
+      </section>
+      <footer
+        >Built for a little break.
+        <span>No downloads. No account. Just one more orbit.</span></footer
+      >
+    </main>
+  </body>
 </html>
